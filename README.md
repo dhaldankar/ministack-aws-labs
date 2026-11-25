@@ -17,7 +17,8 @@ If you use Podman with the `podman-compose` provider, set these VS Code user set
 ```json
 {
   "dev.containers.dockerPath": "podman",
-  "dev.containers.dockerComposePath": "podman-compose"
+  "dev.containers.dockerComposePath": "podman-compose",
+  "dev.containers.mountWaylandSocket": false
 }
 ```
 
