@@ -2,6 +2,9 @@
 
 The first lab uses Terraform and IAM to give a learner read-only access to a single S3 object.
 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4b9df980-121e-4cd7-bc05-8100ff021a02" />
+
+
 ## Open the lab in VS Code
 
 Start a Linux container engine and make sure its Compose command works.
