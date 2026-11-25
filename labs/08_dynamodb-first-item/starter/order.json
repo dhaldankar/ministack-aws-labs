@@ -1,0 +1,7 @@
+{
+  "order_id":  { "S": "order-100" },
+  "customer":  { "S": "alice" },
+  "product":   { "S": "widget" },
+  "quantity":  { "N": "3" },
+  "status":    { "S": "pending" }
+}
