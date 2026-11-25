@@ -1,0 +1,54 @@
+{
+  "ministack-ddb-query-orders": [
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "alice" },
+          "order_id":    { "S": "ord-100" },
+          "product":     { "S": "widget" },
+          "status":      { "S": "shipped" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "alice" },
+          "order_id":    { "S": "ord-200" },
+          "product":     { "S": "gadget" },
+          "status":      { "S": "pending" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "alice" },
+          "order_id":    { "S": "ord-300" },
+          "product":     { "S": "doohickey" },
+          "status":      { "S": "delivered" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "bob" },
+          "order_id":    { "S": "ord-101" },
+          "product":     { "S": "thingamajig" },
+          "status":      { "S": "pending" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "customer_id": { "S": "bob" },
+          "order_id":    { "S": "ord-202" },
+          "product":     { "S": "widget" },
+          "status":      { "S": "shipped" }
+        }
+      }
+    }
+  ]
+}

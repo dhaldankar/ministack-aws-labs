@@ -1,0 +1,7 @@
+[
+  {
+    "Source": "com.example.orders",
+    "DetailType": "order.placed",
+    "Detail": "{\"orderId\":\"ORD-001\",\"amount\":59.99}"
+  }
+]

@@ -2,7 +2,11 @@
 
 The playground covers **14 AWS services**. Learners first use each service, then configure it for a specific outcome, then diagnose a reproducible failure. Application labs combine the services after learners have practiced each one independently.
 
-The proposed catalog has **46 guided activities**: one orientation, 42 service exercises, and three application labs. The existing S3 least-privilege lab becomes the IAM troubleshooting exercise. The other activities are proposed.
+The planned catalog has **46 guided activities**: one orientation, 42 service exercises, and three application labs. The first 40 labs are authored and included in the catalog. The three RDS exercises and three application labs remain planned.
+
+See [all 46 lab designs and their implementation status](NEXT_20_LABS.md).
+
+Source folders use `NN_<id>`, with a two-digit catalog position such as `01_orientation`. The ID stays stable when an exercise moves. The browser catalog and CLI use the prefix for order and the ID for commands, URLs, and workspaces.
 
 ## Orientation
 

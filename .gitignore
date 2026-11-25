@@ -1,6 +1,7 @@
 # Local site builds and dependencies
 node_modules/
 /dist/
+/.lab-catalog/
 *.log
 
 # Terraform working files and local state
@@ -14,10 +15,8 @@ crash.*.log
 !*.example.tfvars
 !*.example.tfvars.json
 
-# Legacy host tools and files produced by the local S3 walkthrough
+# Legacy host tools and archived Terraform files
 /.lab-tools/
-/exercises/s3-least-privilege/.terraform.lock.hcl
-/exercises/s3-least-privilege/learner-policy.tf
 
 # Local environment overrides and editor files
 .env

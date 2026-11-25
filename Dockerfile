@@ -22,11 +22,11 @@ WORKDIR /opt/lab-site
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY labs/ ./labs/
+COPY scripts/lab.mjs scripts/START-HERE.md scripts/sandbox.sh ./scripts/
 RUN npm run build
-
-COPY exercises/s3-least-privilege/main.tf exercises/s3-least-privilege/check.sh /opt/exercise/
 COPY scripts/start-lab.sh /usr/local/bin/start-lab
-RUN chmod +x /usr/local/bin/start-lab /opt/exercise/check.sh
+RUN chmod +x /usr/local/bin/start-lab /opt/lab-site/scripts/lab.mjs \
+    && ln -s /opt/lab-site/scripts/lab.mjs /usr/local/bin/lab
 
 WORKDIR /lab
 CMD ["/usr/local/bin/start-lab"]
