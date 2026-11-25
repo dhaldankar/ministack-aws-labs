@@ -1,0 +1,11 @@
+{
+  "name": "ministack-cloud-labs",
+  "private": true,
+  "scripts": {
+    "dev": "labforge serve labs",
+    "build": "labforge build labs -o dist"
+  },
+  "devDependencies": {
+    "labforge": "1.0.0"
+  }
+}

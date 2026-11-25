@@ -1,0 +1,11 @@
+**
+!package.json
+!package-lock.json
+!labs/
+!labs/**
+!exercises/
+!exercises/s3-least-privilege/
+!exercises/s3-least-privilege/main.tf
+!exercises/s3-least-privilege/check.sh
+!scripts/
+!scripts/start-lab.sh

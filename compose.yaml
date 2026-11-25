@@ -1,0 +1,33 @@
+services:
+  lab:
+    build: .
+    depends_on:
+      - ministack
+    environment:
+      AWS_ENDPOINT_URL: http://ministack:4566
+      TF_VAR_ministack_endpoint: http://ministack:4566
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_EC2_METADATA_DISABLED: "true"
+      AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+      AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+    ports:
+      - "127.0.0.1:4000:4000"
+    volumes:
+      - exercise:/lab
+
+  ministack:
+    image: docker.io/ministackorg/ministack:1.5.44
+    environment:
+      AUTH: "true"
+      PERSIST_STATE: "1"
+      S3_PERSIST: "1"
+    volumes:
+      - emulator-state:/tmp/ministack-state
+      - emulator-s3:/tmp/ministack-data/s3
+
+volumes:
+  exercise:
+  emulator-state:
+  emulator-s3:

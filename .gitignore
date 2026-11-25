@@ -1,0 +1,29 @@
+# Local site builds and dependencies
+node_modules/
+/dist/
+*.log
+
+# Terraform working files and local state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.example.tfvars
+!*.example.tfvars.json
+
+# Legacy host tools and files produced by the local S3 walkthrough
+/.lab-tools/
+/exercises/s3-least-privilege/.terraform.lock.hcl
+/exercises/s3-least-privilege/learner-policy.tf
+
+# Local environment overrides and editor files
+.env
+.env.*
+!.env.example
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db

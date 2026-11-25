@@ -1,0 +1,16 @@
+{
+  "name": "MiniStack cloud labs",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "lab",
+  "workspaceFolder": "/lab",
+  "overrideCommand": false,
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": ["hashicorp.terraform"],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
